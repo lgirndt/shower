@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Shower</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1274, user-scalable=no">
+    <link rel="stylesheet" href="themes/ribbon/styles/style.css">
+    <style>
+        #Cover H2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 70px;
+        }
+
+        #dropbox {
+            color: #3C3D40;
+        }
+
+        .dropArea {
+            width: 200px;
+            height: 200px;
+            border: 4px dashed #3C3D40;
+            /*position: fixed;*/
+            margin: 10px;
+            padding: 10px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        .dragEnter {
+            background-color: #fff;
+            opacity: 0.3;
+        }
+    </style>
+
+</head>
+<body class="list">
+
+
+
+<div id="dropbox">
+
+    <h1>MarkDown Shower</h1>
+
+    choose a File <input type="file" name="file"/>
+    <div class="dropArea">or drop some MarkDown here!</div>
+
+    Shortcuts:
+    <ul>
+        <li>ctrl-r Reload file, once it is loaded</li>
+        <li>ctrl-n Go back to the load screen</li>
+    </ul>
+</div>
+
+<div id="output" style="visibility: hidden"></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/Markdown.Converter.js"></script>
+<script type="text/javascript" src="scripts/dropbox.js"></script>
+<script type="text/javascript">
+    $('document').ready(function() {
+        $('#dropbox').dropbox({ output: '#output'});
+    });
+</script>
+</body>
+</html>

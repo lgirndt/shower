@@ -1,0 +1,96 @@
+Shower Presentation Template
+============================
+Lars Girndt
+
+Shower Presentation Template
+----------------------------
+
+Header
+------
+This `<tool>` is provided **without** warranty, guarantee, or much in the
+way of explanation. Note that use of this tool may or may not crash *your*
+browser.
+
+
+Two rows.
+--------
+Mighty heading
+-------------
+
+This `<tool>` is provided **without** warranty, guarantee, or much in the
+way of explanation. Note that use of this tool may or may not crash *your*
+browser.
+
+
+Unordered Lists
+---------------
+
+*  This tool is provided
+*  Without warranty, guarantee
+*  Or much in the way of explanation
+    1.  Note use of this tool
+    1.  May or may not crash your browser
+    1.  Lock up your machine
+* Erase your hard drive.
+
+Ordered Lists
+---------------
+
+1.  This tool is provided
+1.  Without warranty, guarantee
+1.  Or much in the way of explanation
+    *  Note use of this tool
+    *  May or may not crash your browser
+    *  Lock up your machine
+1. Erase your hard drive.
+
+In the Middle
+-------------
+
+TODO
+
+Picture
+-------
+
+TODO
+
+Code Sample
+-----------
+    <html lang="en-US">
+        <title>Shower</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="s/screen.css">
+        <script src="j/jquery.js"></script>
+    </head>
+
+
+Code Notes
+----------
+
+    <html lang="en-US">
+
+May or may not crash your browser
+
+    <meta charset="UTF-8">
+
+Lock up your machine
+
+
+Warning Message
+---------------
+
+TODO
+
+Demo
+----
+
+TODO
+
+Block Quotes
+------------
+
+> This tool is provided without warranty, guarantee, or much in the way of
+explanation. Note that use of this tool may or may not crash your browser,
+lock up your machine, erase your hard drive.
+
+**Anonymous**

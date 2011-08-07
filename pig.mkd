@@ -1,0 +1,59 @@
+Analyzing Data with Pig
+=======================
+
+Lars Girndt, lgirndt@brands4friends.com
+
+Agenda
+------
+
+* Map Reduce
+* Hadoop and Pig
+* Pig in Detail
+* An Example: Apache Logs
+
+Map Reduce
+----------
+
+> MapReduce is a framework for processing huge datasets on certain kinds of distributable problems using a large number of computers (nodes), collectively referred to as a cluster (if all nodes use the same hardware) or as a grid (if the nodes use different hardware). Computational processing can occur on data stored either in a filesystem (unstructured) or within a database (structured).
+
+[Wikipedia](http://en.wikipedia.org/wiki/MapReduce)
+
+
+Map
+---
+
+*Map* applies a transformation to a list of Key/Value pairs and maps
+them to another list of Key/Value pairs. If this mapping is independant,
+it could be processed in parallel.
+
+    Map(k1,v1) -> list(k2,v2)
+
+Reduce
+------
+
+*Reduce*
+
+    Reduce(k2,list(v2)) -> list(v3)
+
+Hadoop and Pig
+--------------
+
+* and now we have some content here
+
+Apache Log Pattern
+----------
+
+> 10.10.100.1 - - [19/Jun/2011:02:44:18 +0200] "GET /favicon.ico HTTP/1.1" 200 782 "Mozilla/5.0 (Windows NT 6.0; rv:2.0.1) Gecko/20100101 Firefox/4.0.1" cluster srv23 OK srv23 OK 0.001427 0/1502 11256 140018907379456 B6F040EF194E03DAE4744533C9BF0630.srv23 Tf1GYn8AAQEAACv4GkgAAALv (85)
+
+
+
+Apache Log Pattern, explained
+------------------
+
+remoteHost, logname, user, timestamp, request, statusCode, bytesSent, userAgent, 
+
+modjk: WorkerName, LbFirstName, LbFirstState, LbLastName, LbLastState, RequestDuration, 
+
+durationInSeconds, durationInMicroSeconds, childPid, childTid, sessionId, uniqueId, ratioInfo
+
+
